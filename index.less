@@ -1,0 +1,135 @@
+html{
+    background-color: #d4d1cb;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.wrap{
+    width:100%;
+    height: 100%;
+    // margin: 20px;
+    position: relative;
+}
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100px;
+    .headerContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .logoText{
+            width:40%;
+            a{
+                font-size: 18px;
+                color:#000 ;
+            }
+        }
+        .headerListView{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            .headerList{
+                padding: 10px 20px;
+                .headerName{
+                    font-size: 22px;
+    
+                }
+                .headerName:hover{
+                   color: #000;
+                  text-decoration: underline;
+    
+                }
+            }
+        }
+ 
+    }
+  
+}
+.container{
+    padding-top: 50px;
+    .worksContainer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        .worksList{
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            .workName{
+                flex: 1;
+                font-size: 22px;
+            }
+            span{
+                flex: 1;
+                font-size: 22px;
+            }
+            .workName:hover{
+                font-size: 24px;
+            }
+          
+        }
+    }
+    .contact{
+        padding:40px 40px;
+        .selfReport{
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+        .messageWrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            .contactInfo{
+                display: flex;
+                flex-direction: column;
+                .contactInfoText{
+                    color: #333;
+                    font-size: 20px;
+                    p{
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                    
+                    
+                }
+                .wetchatImg{
+                 position: relative;
+                //  display: none;
+                  width: 300px;
+                  height: 300px;
+                  opacity: 0.8;
+                }   
+            }
+            .selfie{
+                margin-top: 20px;
+                width: 500px;
+                height: 700px;
+                border-radius: 4px;
+            }
+        }
+        
+    }
+}
+footer{
+    .footerName{
+        width: 100%;
+        text-align: center;
+        font-size:300px;
+        font-weight: bolder;
+        
+    }
+}
+
