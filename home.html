@@ -1,233 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>litterWang</title>
-
-    <!--响应式框架-->
-    <link rel='stylesheet' href='css/bootstrap.min.css'>
-
-    <!--图标库-->
-    <link rel='stylesheet' href='css/all.css'>
-
-    <!--主要样式-->
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitterWang</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js"></script>
 </head>
-
 <body>
-
-    <main class="site-wrapper">
-
-        <div class="pt-table desktop-768">
-
-            <div class="pt-tablecell page-home relative">
-
-                <div class="overlay"></div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-                            <div class="page-title  home text-center">
-                                <span class="heading-page"> 欢迎来到我的主页
-                                </span>
-                                <p class="mt20">以下是我的个人介绍快捷入口。</p>
-                            </div>
-
-                            <div class="hexagon-menu clear">
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="./index.html" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-universal-access"></i>
-                                            </span>
-                                            <span class="title">Welcome</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-bullseye"></i>
-                                            </span>
-                                            <span class="title">About</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-braille"></i>
-                                            </span>
-                                            <span class="title">Services</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-id-badge"></i>
-                                            </span>
-                                            <span class="title">Resume</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="./index.html#works" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-life-ring"></i>
-                                            </span>
-                                            <span class="title">Works</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-clipboard"></i>
-                                            </span>
-                                            <span class="title">Testimonials</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="hexagon-item">
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div class="hex-item">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <a href="index.html#contact" class="hex-content">
-                                        <span class="hex-content-inner">
-                                            <span class="icon">
-                                                <i class="fa fa-map-signs"></i>
-                                            </span>
-                                            <span class="title">Contact</span>
-                                        </span>
-                                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                                                fill="#1e2530"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="wrap">
+        <header>
+            <ul class="headerContainer">
+                <li class="logoText"><a href="#">LitterWang</a></li>
+                <div class="headerListView">
+                    <li class="headerList"><a class="headerName" href="#">首页</a></li>
+                    <li class="headerList"><a class="headerName" href="#works">作品</a></li>
+                    <li class="headerList"><a class="headerName" href="#">联系我</a></li>
                 </div>
 
+            </ul>
+        </header>
+        <div class="container">
+            <ul class="worksContainer" id='works'>
+                <li class="worksList">
+                     <a class="workName" href="./works/workList1/index.html">Num 1 </a>
+                     <span>Taro小程序</span>
+                     <span>民宿类，景区类</span>
+                </li>
+                <li class="worksList">
+                    <a class="workName" href="./works/workList2/index.html">Num 2 </a>
+                    <span>ReactNative APP</span>
+                    <span>资讯类</span>
+
+                </li>
+                <li class="worksList">
+                    <a class="workName" href="./works/workList3/index.html">Num 3 </a>
+                    <span>H5</span>
+                    <span>动画效果</span>
+                </li>
+                <li class="worksList">
+                    <a class="workName" href="./works/workList4/index.html">Num 4 </a>
+                    <span>Antd 后管</span>
+                    <span>EChart</span>
+                </li>
+                <li class="worksList">
+                    <a class="workName" href="./works/workList5/index.html">Num 5 </a>
+                    <span>网站</span>
+                    <span>DoraCMS</span>
+                </li>
+            </ul>
+            <div class="contact " id='contact'>
+                <p class="selfReport">
+                    一个貌美如花的小白从湖南跑天津上大学，专业计算机科学与技术，在学校学习成绩都是中上，很多次前五名以内，也拿过一些二等三等奖学金和励志奖学金，学校期间自学前端技术，
+                    大部分是HTML+CSS+JS，学校专业只要有C语言，SQL，算法，大数据，软件测试，JAVA，2020因疫情原因无法返校，难得静心修炼，学习了小程序、Vue、React以及bootstarp，
+                    无奈自学进展缓慢，2020年5月前往北京实习，实习期间只要以React为主，期间小程序使用Taro-ui框架，APP采用React Native技术，之后。。。
+                </p>
+                <div class="messageWrap">
+                    <div class="contactInfo">
+                        <div class="contactInfoText">
+                            有合适工作机会，请联系我
+                            <p>邮箱 :    wmshero123@sina.com</p>
+                            <p>电话 :    17695974562</p>
+                            <p class="wechat" id='wechat'>
+                                微信:
+                            </p>
+                        </div>
+                        <img class="wetchatImg" id='wetchatImg' src='./wetchat.jpg'></img>
+                    </div>
+                    <img src="./selffie.jpg" alt="" class="selfie">
+                </div>
+              
+
             </div>
-
         </div>
+        <footer>
+            <p class="footerName">LitterWang</p>
 
-    </main>
+        </footer>
+    </div>
 
 </body>
 
