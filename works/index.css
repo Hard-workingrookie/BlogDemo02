@@ -13,6 +13,7 @@
 }
 .wrap {
   padding: 20px;
+  position: relative;
 }
 .wrap .infoContainer {
   display: flex;
