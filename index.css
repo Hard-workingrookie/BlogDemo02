@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
-@import url(https://fonts.googleapis.com/css?family=Lato);
 html {
   background-color: #d4d1cb;
 }
@@ -15,6 +14,43 @@ a {
   height: 100%;
   position: relative;
 }
+.index {
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url('https://ae01.alicdn.com/kf/Hf1af481a5f254ceeb0e805c1621c0004L.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.index button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  animation: downToUp 0.8s ease-out both;
+}
+.index button:hover {
+  background-color: #333;
+}
+.index button:hover a {
+  color: #fff;
+}
+.index p {
+  animation: downToUp 0.8s ease-out both;
+  margin-top: 20px;
+  letter-spacing: 10px;
+  font-size: 24px;
+  color: #fff;
+}
 header {
   position: fixed;
   top: 0;
@@ -22,6 +58,7 @@ header {
   width: 100%;
   height: 100px;
   z-index: 10;
+  margin-bottom: 20px;
 }
 header .headerContainer {
   display: flex;
@@ -30,7 +67,7 @@ header .headerContainer {
   flex-direction: row;
 }
 header .headerContainer .logoText {
-  width: 40%;
+  flex: 2;
 }
 header .headerContainer .logoText .logoTxt {
   margin: 0 2em;
@@ -44,9 +81,10 @@ header .headerContainer .logoText .logoTxt span {
   animation: landIn 0.8s ease-out both;
 }
 header .headerContainer .headerListView {
+  flex: 8;
   display: flex;
   flex-direction: row;
-  flex: 1;
+  justify-content: center;
 }
 header .headerContainer .headerListView .headerList {
   padding: 10px 20px;
@@ -59,6 +97,10 @@ header .headerContainer .headerListView .headerList a {
 header .headerContainer .headerListView .headerList .headerName:hover {
   color: #000;
   text-decoration: underline;
+}
+header .headerContainer .loading {
+  flex: 2;
+  justify-content: center;
 }
 .container {
   padding-top: 50px;
@@ -89,41 +131,67 @@ header .headerContainer .headerListView .headerList .headerName:hover {
   font-size: 24px;
 }
 .container .contact {
-  padding: 40px 40px;
-}
-.container .contact .selfReport {
-  font-size: 20px;
-  letter-spacing: 4px;
-}
-.container .contact .messageWrap {
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.container .contact .selfReport {
+  width: 30%;
+  font-size: 20px;
+  letter-spacing: 8px;
+  padding: 20px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+.container .contact .messageWrap {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: start;
+  padding: 10px;
 }
 .container .contact .messageWrap .contactInfo {
   display: flex;
   flex-direction: column;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 6px;
 }
 .container .contact .messageWrap .contactInfo .contactInfoText {
   color: #333;
   font-size: 20px;
 }
 .container .contact .messageWrap .contactInfo .contactInfoText p {
+  background-color: #d4d1cb;
   height: 50px;
   line-height: 50px;
+  padding: 0 10px;
+  border-radius: 10px;
 }
 .container .contact .messageWrap .contactInfo .wetchatImg {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 500px;
   opacity: 0.8;
 }
-.container .contact .messageWrap .selfie {
-  margin-top: 20px;
-  width: 500px;
-  height: 700px;
-  border-radius: 4px;
+.container .contact .selfImgs {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+.container .contact .selfImgs .selfie {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+.container .contact .selfImgs .selfie:first-child {
+  margin-right: 10px;
 }
 footer {
   width: 100%;
@@ -150,6 +218,16 @@ footer .footerName span {
   from {
     opacity: 0;
     transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes downToUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
   }
   to {
     opacity: 1;

@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LitterWang</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script src="./js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="./index.js"></script>
 </head>
+
 <body>
+    
     <div class="wrap">
+        <div class="index">
+            <button> <a href="#contact">了解我</a></button>
+            <p>灵感|代码|梦想|未来</p>
+
+        </div>
         <header>
             <ul class="headerContainer">
-                <li class="logoText"><p class="logoTxt">LitterWang</p></li>
+                <li class="logoText">
+                    <p class="logoTxt">LitterWang</p>
+                </li>
                 <div class="headerListView">
-                    <li class="headerList"><a class="headerName"  href="#">首页</a></li>
-                    <li class="headerList"><a class="headerName"  href="#works">作品</a></li>
-                    <li class="headerList"><a class="headerName"  href="#">联系我</a></li>
+                    <li class="headerList"><a class="headerName" href="#">首页</a></li>
+                    <li class="headerList"><a class="headerName" href="#works">作品</a></li>
+                    <li class="headerList"><a class="headerName" href="#">联系我</a></li>
                 </div>
-
+                <li class="loading">
+                    留言
+                </li>
             </ul>
         </header>
         <div class="container">
+
             <ul class="worksContainer" id='works'>
                 <li class="worksList">
-                     <a class="workName" href="./works/workList1/index.html">Num 1 </a>
-                     <span>Taro小程序</span>
-                     <span>民宿类，景区类</span>
+                    <a class="workName" href="./works/workList1/index.html">Num 1 </a>
+                    <a class="workName" href="./works/workList1/index.html">Taro小程序 </a>
+                    <a class="workName" href="./works/workList1/index.html">民宿类，景区类 </a>
                 </li>
                 <li class="worksList">
                     <a class="workName" href="./works/workList2/index.html">Num 2 </a>
-                    <span>ReactNative APP</span>
-                    <span>资讯类</span>
-
+                    <a class="workName" href="./works/workList2/index.html">ReactNative APP</a>
+                    <a class="workName" href="./works/workList2/index.html">资讯类</a>
                 </li>
                 <li class="worksList">
                     <a class="workName" href="./works/workList3/index.html">Num 3 </a>
-                    <span>H5</span>
-                    <span>动画效果</span>
+                    <a class="workName" href="./works/workList3/index.html">H5</a>
+                    <a class="workName" href="./works/workList3/index.html">动画效果</a>
                 </li>
                 <li class="worksList">
                     <a class="workName" href="./works/workList4/index.html">Num 4 </a>
-                    <span>Antd 后管</span>
-                    <span>EChart</span>
+                    <a class="workName" href="./works/workList4/index.html">Antd 后管</a>
+                    <a class="workName" href="./works/workList4/index.html">EChart</a>
                 </li>
                 <li class="worksList">
                     <a class="workName" href="./works/workList5/index.html">Num 5 </a>
-                    <span>网站</span>
-                    <span>DoraCMS</span>
+                    <a class="workName" href="./works/workList5/index.html">网站</a>
+                    <a class="workName" href="./works/workList5/index.html">DoraCMS</a>
                 </li>
             </ul>
             <div class="contact " id='contact'>
@@ -59,17 +73,26 @@
                     <div class="contactInfo">
                         <div class="contactInfoText">
                             有合适工作机会，请联系我
-                            <p>邮箱 :    wmshero123@sina.com</p>
-                            <p>电话 :    17695974562</p>
+                            <p>邮箱 : wmshero123@sina.com</p>
+                            <p>电话 : 17695974562</p>
                             <p class="wechat" id='wechat'>
                                 微信:
                             </p>
                         </div>
+
                         <img class="wetchatImg" id='wetchatImg' src='./wetchat.jpg'></img>
                     </div>
-                    <img src="./selffie.jpg" alt="" class="selfie">
+
                 </div>
-              
+                <div class="selfImgs">
+                    <img src="./selffie.jpg" alt="" class="selfie">
+                    <img src="./selffie1.jpg" alt="" class="selfie">
+
+
+                </div>
+
+            </div>
+            <div class="technicalMastery">
 
             </div>
         </div>

@@ -24,6 +24,19 @@ window.onload = function () {
         });
     });
 
-
+    let loading = document.querySelector(".loading");
+    let loadingletters = loading.textContent.split("");
+    loading.textContent = "";
+    loadingletters.forEach((letter, i) => {
+      let span = document.createElement("span");
+      span.textContent = letter;
+      span.style.animationDelay = `${i / 10}s`;
+      loading.append(span);
+    });
+    loading.onclick=function(){
+        window.location.href="./pages/Message/index.html"
+    }
+   
 
 }
+

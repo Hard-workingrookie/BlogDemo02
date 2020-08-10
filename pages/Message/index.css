@@ -1,0 +1,99 @@
+body {
+  background-color: #d4d1cb;
+}
+header {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+header .position {
+  border-bottom: 1px solid #333;
+  color: #333;
+  font-weight: 500;
+  line-height: 40px;
+}
+header .position a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+}
+.container .Left_Wrap {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  width: 70%;
+  border-radius: 10px;
+}
+.container .Left_Wrap .saySth {
+  font-size: 22px;
+}
+.container .Left_Wrap .nickName {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #666;
+}
+.container .Left_Wrap .MessageTextArea {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #666;
+}
+.container .Left_Wrap .MessageSubmit {
+  border-radius: 4px;
+  width: 20%;
+  height: 30px;
+  border: 1px solid #666;
+}
+.container .right_wrap {
+  width: 20%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.container .right_wrap .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+.container .right_wrap .about .selfImg {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.container .right_wrap .about ul {
+  list-style: none;
+}
+.container .right_wrap .about ul li {
+  background-color: #d4d1cb;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+.container .right_wrap .about ul li p {
+  color: #333;
+  line-height: 30px;
+  font-size: 18px;
+}
+.container .right_wrap .wechat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.container .right_wrap .wechat .wechatImg {
+  width: 360px;
+  height: 500px;
+}
