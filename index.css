@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+@import url(https://fonts.googleapis.com/css?family=Lato);
 html {
   background-color: #d4d1cb;
 }
@@ -19,6 +21,7 @@ header {
   left: 0;
   width: 100%;
   height: 100px;
+  z-index: 10;
 }
 header .headerContainer {
   display: flex;
@@ -29,9 +32,16 @@ header .headerContainer {
 header .headerContainer .logoText {
   width: 40%;
 }
-header .headerContainer .logoText a {
-  font-size: 18px;
-  color: #000 ;
+header .headerContainer .logoText .logoTxt {
+  margin: 0 2em;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #020202;
+  font-family: Lora, serif;
+}
+header .headerContainer .logoText .logoTxt span {
+  animation: landIn 0.8s ease-out both;
 }
 header .headerContainer .headerListView {
   display: flex;
@@ -41,8 +51,10 @@ header .headerContainer .headerListView {
 header .headerContainer .headerListView .headerList {
   padding: 10px 20px;
 }
-header .headerContainer .headerListView .headerList .headerName {
+header .headerContainer .headerListView .headerList a {
   font-size: 22px;
+  overflow: hidden;
+  text-decoration: none;
 }
 header .headerContainer .headerListView .headerList .headerName:hover {
   color: #000;
@@ -113,9 +125,34 @@ header .headerContainer .headerListView .headerList .headerName:hover {
   height: 700px;
   border-radius: 4px;
 }
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer .footerName {
   width: 100%;
-  text-align: center;
-  font-size: 300px;
-  font-weight: bolder;
+  justify-content: center;
+  margin: 0 2em;
+  font-size: 16em;
+  font-weight: 600;
+  display: flex;
+  line-height: 1.8;
+  color: #020202;
+  font-family: Lora, serif;
+  white-space: pre;
+}
+footer .footerName span {
+  animation: landIn 0.8s ease-out both;
+}
+@keyframes landIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

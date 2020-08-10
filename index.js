@@ -1,29 +1,29 @@
 
 
 window.onload = function () {
-    // var wetchatImg = document.getElementById("wetchatImg");
-    // var wechat = document.getElementById("wechat");
-    // var workList = document.getElementsByClassName("worksList");
-    // var workListImg = document.getElementsByClassName("workListImg");
+    let landInTexts = document.querySelectorAll(".footerName");
+    let logoTxtTexts = document.querySelectorAll(".logoTxt");
+    landInTexts.forEach(landInText => {
+        let letters = landInText.textContent.split("");
+        landInText.textContent = "";
+        letters.forEach((letter, i) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.style.animationDelay = `${i * 0.05}s`;
+            landInText.append(span);
+        });
+    });
+    logoTxtTexts.forEach(logoTxt => {
+        let letters = logoTxt.textContent.split("");
+        logoTxt.textContent = "";
+        letters.forEach((letter, i) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.style.animationDelay = `${i * 0.05}s`;
+            logoTxt.append(span);
+        });
+    });
 
-    // var isShow = false
-    // wechat.onmouseover = function () {
-    //     if (isShow == true) {
-    //         wetchatImg.style.display = "none";
-    //         isShow = !isShow
-    //     } else {
-    //         console.log(isShow)
-    //         wetchatImg.style.display = "block";
-    //         isShow = !isShow
-    //     }
-    // }
-    // for(var i=0;i<workList.length;i++){
-    //     workList[i].onmouseover=function(){
-    //         workListImg[i].style.display='block'
-    //         setTimeout(function(){
-    //             workListImg[i].style.display='none'
-    //          }, 3000);
-    //     }
-    // }
+
 
 }
