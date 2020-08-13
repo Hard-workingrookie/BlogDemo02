@@ -106,3 +106,13 @@ header .position a {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .Left_Wrap {
+    width: 100% !important;
+  }
+  .right_wrap {
+    width: 100% !important;
+    margin-top: 20px;
+    margin-left: 0 !important;
+  }
+}
