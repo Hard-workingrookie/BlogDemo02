@@ -186,7 +186,7 @@ header .headerContainer .loading {
   flex-direction: row;
 }
 .container .contact .selfImgs .selfie {
-  width: 300px;
+  width: 50%;
   height: 400px;
   border-radius: 10px;
 }

@@ -1,0 +1,140 @@
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  header .headerContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header .headerContainer .logoText {
+    width: 50px;
+  }
+  header .headerContainer .logoText .logoTxt {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #020202;
+    font-family: Lora, serif;
+  }
+  header .headerContainer .logoText .logoTxt span {
+    animation: landIn 0.8s ease-out both;
+  }
+  header .headerContainer .headerListView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 4;
+  }
+  header .headerContainer .headerListView .headerList {
+    padding: 10px 6px;
+  }
+  header .headerContainer .headerListView .headerList a {
+    font-size: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  header .headerContainer .headerListView .headerList .headerName:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  header .headerContainer .loading {
+    display: inline-block;
+  }
+  .container {
+    padding-top: 10px;
+  }
+  .container .contact {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .contact .selfReport {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    background-color: transparent !important;
+    font-family: sans-serif;
+    margin: 0 10px;
+  }
+  .container .contact .messageWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+  }
+  .container .contact .messageWrap .contactInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  .container .contact .messageWrap .contactInfo .contactInfoText {
+    color: #333;
+    font-size: 20px;
+  }
+  .container .contact .messageWrap .contactInfo .contactInfoText p {
+    background-color: #d4d1cb;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+  .container .contact .messageWrap .contactInfo .wetchatImg {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+  }
+  .container .contact .selfImgs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .contact .selfImgs .selfie {
+    height: 300px;
+    border-radius: 10px;
+  }
+  .container .contact .selfImgs .selfie:first-child {
+    margin-right: 10px;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerName {
+    width: 100%;
+    justify-content: center;
+    font-size: 60px;
+    line-height: 1.8;
+    color: #020202;
+    font-family: Lora, serif;
+    white-space: pre;
+  }
+  .image-box img {
+    width: 300px;
+    height: 400px;
+  }
+}
