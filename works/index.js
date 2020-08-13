@@ -5,11 +5,11 @@ window.onload = function () {
     infoBtn.onclick = function () {
         if (isShow == false) {
             isShow = true
-            info.innerHTML = 'CLOSE';
+            info.innerHTML = '关闭';
             introuduContainer.style.display = 'block'
         } else {
             isShow = false
-            info.innerHTML = 'INFO';
+            info.innerHTML = '查看详情';
             introuduContainer.style.display = 'none'
 
         }
