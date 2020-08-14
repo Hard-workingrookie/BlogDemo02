@@ -48,17 +48,18 @@ a {
         background-color: #333;
 
         a {
-            color: #fff;
+            color: #8C7F63;
         }
 
     }
 
     p {
         animation: downToUp 0.8s ease-out both;
-        margin-top: 20px;
+        margin-top: 180px;
         letter-spacing: 10px;
-        font-size: 24px;
-        color: #fff;
+        font-size: 22px;
+        color: rgb(187, 143, 48);
+        font-weight: bolder;
     }
 
 }
@@ -172,7 +173,6 @@ header {
         align-items: center;
 
         .selfReport {
-            width: 30%;
             background-color: #fff;
             padding: 10px;
             .selfReportText {
@@ -182,24 +182,28 @@ header {
                 padding: 10px;
                 font-family: sans-serif;
                 box-sizing: border-box;
+                margin: 0;
             }
         }
 
         .messageWrap {
-            width: 30%;
+            max-width: 400px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: start;
+            background-color: #fff;
+            margin-left: 10px;
+            margin-right: 10px;
             padding: 10px;
-
             .contactInfo {
+                border: 1px dashed #ccc;
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
-                padding: 10px 20px;
                 background-color: #fff;
                 border-radius: 6px;
-
+                padding: 10px;
                 .contactInfoText {
                     color: #333;
                     font-size: 20px;
@@ -228,9 +232,10 @@ header {
                 }
 
                 .wetchatImg {
+                    
                     position: relative;
-                    width: 400px;
-                    height: 500px;
+                    width: 300px;
+                    height: 400px;
                     opacity: 0.8;
                 }
             }
@@ -238,7 +243,7 @@ header {
         }
 
         .selfImgs {
-            width: 30%;
+            min-width: 400px;
             display: flex;
             flex-direction: row;
 
