@@ -10,8 +10,12 @@
     <link rel="stylesheet" type="text/css" href="./css/lanren.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <script src="./js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/ScrollToPlugin.min.js"></script>
     <script src="./index.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <div class="index">
@@ -24,9 +28,11 @@
                     <p class="logoTxt">LitterWang</p>
                 </li>
                 <div class="headerListView">
-                    <li class="headerList"><a class="headerName" href="#">首页</a></li>
-                    <li class="headerList"><a class="headerName" href="#works">作品</a></li>
-                    <li class="headerList"><a class="headerName" href="#contact">联系我</a></li>
+                    <li class="headerList"><a class="headerName" href="#">Index</a></li>
+                    <li class="headerList"><a class="headerName" href="#works">Works</a></li>
+                    <li class="headerList"><a class="headerName" href="#contact">Contact</a></li>
+                    <li class="headerList"><a class="headerName" href="./pages/Blog/index.html">Blog</a></li>
+               
                 </div>
                 <li class="loading">
                     留言
@@ -151,11 +157,14 @@
                 </li>
             </ul> -->
             <div class="contact" id='contact'>
-                <p class="selfReport">
-                    一个貌美如花的小白从湖南跑天津上大学，专业计算机科学与技术，在学校学习成绩都是中上，很多次前五名以内，也拿过一些二等三等奖学金和励志奖学金，学校期间自学前端技术，
-                    大部分是HTML+CSS+JS，学校专业只要有C语言，SQL，算法，大数据，软件测试，JAVA，2020因疫情原因无法返校，难得静心修炼，学习了小程序、Vue、React以及bootstarp，
-                    无奈自学进展缓慢，2020年5月前往北京实习，实习期间只要以React为主，期间小程序使用Taro-ui框架，APP采用React Native技术，之后。。。
-                </p>
+                <div class="selfReport">
+                    <p  class="selfReportText">
+                        一个貌美如花的小白从湖南跑天津上大学，专业计算机科学与技术，在学校学习成绩都是中上，很多次前五名以内，也拿过一些二等三等奖学金和励志奖学金，学校期间自学前端技术，
+                        大部分是HTML+CSS+JS，学校专业只要有C语言，SQL，算法，大数据，软件测试，JAVA，2020因疫情原因无法返校，难得静心修炼，学习了小程序、Vue、React以及bootstarp，
+                        无奈自学进展缓慢，2020年5月前往北京实习，实习期间只要以React为主，期间小程序使用Taro-ui框架，APP采用React Native技术，之后。。。
+                    </p>
+                  
+                </div>
                 <div class="messageWrap">
                     <div class="contactInfo">
                         <div class="contactInfoText">
@@ -165,8 +174,8 @@
                             <p class="wechat" id='wechat'>
                                 微信:
                             </p>
+                           <p class="github">github:<img id='github' src="./images/github.png" alt=""/></p> 
                         </div>
-
                         <img class="wetchatImg" id='wetchatImg' src='./wetchat.jpg'></img>
                     </div>
                 </div>
@@ -183,6 +192,12 @@
         <footer>
             <p class="footerName">LitterWang</p>
         </footer>
+        <!-- 右侧小火箭图标返回顶部 -->
+        <div id="shangxia2">
+            <span id="gotop1">
+                <img width="80px" height="80px" src="./images/huojian.svg" alt="返回顶部小火箭">
+            </span>
+        </div>
     </div>
 
 </body>

@@ -6,16 +6,30 @@ header {
   padding: 20px;
   box-sizing: border-box;
 }
-header .position {
-  border-bottom: 1px solid #333;
-  color: #333;
-  font-weight: 500;
-  line-height: 40px;
+header .back {
+  color: #8C7F63;
+  line-height: 50px;
+  align-self: start;
+  font-size: 22px;
+  font-weight: lighter;
+  cursor: pointer;
 }
-header .position a {
-  color: #333;
-  font-weight: 500;
-  text-decoration: none;
+header .back:hover {
+  animation: colorChange 1s infinite;
+}
+@keyframes colorChange {
+  20% {
+    color: #c9a65b;
+  }
+  40% {
+    color: #D99400;
+  }
+  60% {
+    color: #bba169;
+  }
+  100% {
+    color: #8C7F63;
+  }
 }
 .container {
   display: flex;
@@ -93,6 +107,16 @@ header .position a {
   color: #333;
   line-height: 30px;
   font-size: 18px;
+}
+.container .right_wrap .about ul li .github {
+  display: flex;
+  align-items: center;
+}
+.container .right_wrap .about ul li .github #github {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 .container .right_wrap .wechat {
   display: flex;

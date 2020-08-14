@@ -6,19 +6,38 @@ header {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    .back{
+        color: #8C7F63;
+        line-height: 50px;
+        align-self: start;
+        font-size: 22px;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+    .back:hover {
+        animation: colorChange 1s infinite;
+     }
+ 
+     @keyframes colorChange {
+        20% {
+            color: rgb(201, 166, 91);
 
-    .position {
-        border-bottom: 1px solid #333;
-        color: #333;
-        font-weight: 500;
-        line-height: 40px;
+        }
 
-        a {
-            color: #333;
-            font-weight: 500;
-            text-decoration: none;
+        40% {
+            color: #D99400;
+
+        }
+        60% {
+            color: rgb(187, 161, 105);
+
+        }
+        100% {
+            color: #8C7F63;
+
         }
     }
+   
 }
 
 .container {
@@ -107,6 +126,16 @@ header {
                         color: #333;
                         line-height: 30px;
                         font-size: 18px;
+                    }
+                    .github{
+                        display: flex;
+                        align-items: center;
+                        #github{
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+                            margin-left: 10px;
+                        }
                     }
                 }
             }

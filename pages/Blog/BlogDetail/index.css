@@ -1,0 +1,111 @@
+body {
+  background-color: #d4d1cb;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .back {
+  color: #8C7F63;
+  line-height: 50px;
+  align-self: start;
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.container .back:hover {
+  animation: colorChange 1s infinite;
+}
+@keyframes colorChange {
+  20% {
+    color: #c9a65b;
+  }
+  40% {
+    color: #D99400;
+  }
+  60% {
+    color: #bba169;
+  }
+  100% {
+    color: #8C7F63;
+  }
+}
+.container .blogDetail .blogwrap {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.container .blogDetail .blogwrap .blog {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted #ccc;
+  width: 800px;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .blogDetail .blogwrap .blog .title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 40px;
+  color: #8C7F63;
+}
+.container .blogDetail .blogwrap .blog .info {
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
+}
+.container .blogDetail .blogwrap .blog .content {
+  color: #333;
+  font-size: 16px;
+  line-height: 28px;
+}
+/* 小火箭css */
+#gotop1 {
+  width: 80px;
+  position: fixed;
+  bottom: 90px;
+  cursor: pointer;
+  z-index: 999;
+  right: 50px;
+}
+/* 小火箭悬停特效 */
+#gotop1:hover {
+  animation: rubberBand 1s;
+}
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* end 小火箭 */
+@media screen and (max-width: 768px) {
+  .blog {
+    width: 100% !important;
+    padding: 10px;
+  }
+}

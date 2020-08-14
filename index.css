@@ -141,12 +141,16 @@ header .headerContainer .loading {
 }
 .container .contact .selfReport {
   width: 30%;
+  background-color: #fff;
+  padding: 10px;
+}
+.container .contact .selfReport .selfReportText {
+  border: 1px dashed #ccc;
   font-size: 20px;
   letter-spacing: 8px;
-  padding: 20px 20px;
-  border-radius: 6px;
-  background-color: #fff;
+  padding: 10px;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 .container .contact .messageWrap {
   width: 30%;
@@ -173,6 +177,16 @@ header .headerContainer .loading {
   line-height: 50px;
   padding: 0 10px;
   border-radius: 10px;
+}
+.container .contact .messageWrap .contactInfo .contactInfoText .github {
+  display: flex;
+  align-items: center;
+}
+.container .contact .messageWrap .contactInfo .contactInfoText .github #github {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 .container .contact .messageWrap .contactInfo .wetchatImg {
   position: relative;
@@ -234,3 +248,40 @@ footer .footerName span {
     transform: translateY(0);
   }
 }
+/* 小火箭css */
+#gotop1 {
+  width: 80px;
+  position: fixed;
+  bottom: 90px;
+  cursor: pointer;
+  z-index: 999;
+  right: 50px;
+}
+/* 小火箭悬停特效 */
+#gotop1:hover {
+  animation: rubberBand 1s;
+}
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* end 小火箭 */

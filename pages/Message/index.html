@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>litterWang</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="../../js/jquery.min.js"></script>
     
 </head>
 
 <body>
     <header>
-        <p class="position">您现在的位置是： <a href="../../home.html" style="font-weight: normal;"> 首页 </a> > <a href="#"> 留言
-            </a></p>
+        <div class="back" >
+            Back
+        </div>
     </header>
     <div class="container">
         <div class="Left_Wrap">
@@ -28,7 +30,7 @@
                     <li><p>职业： 前端工程师</p></li>
                     <li><p>现处城市： 天津</p></li>
                     <li><p>邮箱： wmshero123@sina.com</p></li>
-
+                    <li> <p class="github">github:<img id='github' src="../../images/github.png" alt=""/></p> </li>
                 </ul>
             </div>
             <div class="wechat">
@@ -40,5 +42,11 @@
 
     </footer>
 </body>
-
+<script>
+    $(function () {
+    $('.back').click(function(){
+        history.go(-1)
+    })
+});
+</script>
 </html>

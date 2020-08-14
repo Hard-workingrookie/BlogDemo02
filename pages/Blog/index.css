@@ -1,0 +1,91 @@
+body {
+  background-color: #d4d1cb;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
+.container .back {
+  color: #8C7F63;
+  line-height: 50px;
+  align-self: start;
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.container .back:hover {
+  animation: colorChange 1s infinite;
+}
+@keyframes colorChange {
+  20% {
+    color: #c9a65b;
+  }
+  40% {
+    color: #D99400;
+  }
+  60% {
+    color: #bba169;
+  }
+  100% {
+    color: #8C7F63;
+  }
+}
+.container .blogWrap .blogCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  /*使用滤镜模糊边缘*/
+}
+.container .blogWrap .blogCard .cardWrap {
+  padding: 10px;
+  width: 500px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+.container .blogWrap .blogCard .cardWrap .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted #ccc;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .blogWrap .blogCard .cardWrap .card .blogTitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.container .blogWrap .blogCard .cardWrap .card .blogTitle a {
+  color: #8C7F63 ;
+}
+.container .blogWrap .blogCard .cardWrap .card .date {
+  color: #555;
+  font-size: 12px;
+  line-height: 30px;
+}
+.container .blogWrap .blogCard .cardWrap .card .info {
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
+}
+.container .blogWrap .blogCard .cardWrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -30px;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
